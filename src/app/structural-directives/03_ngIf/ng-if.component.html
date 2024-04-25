@@ -1,0 +1,26 @@
+<input type="checkbox" [(ngModel)]="showUl">Show/hide
+<button (click)="toggleVisibility()">Show/hide</button>
+
+<!-- cod will remove from DOM if showUL is false-->
+<div *ngIf="showUl">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</div>
+
+
+<!-- code stayed in DOM-->
+<div [style.display]="showUl ? 'block' : 'none'">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</div>
+

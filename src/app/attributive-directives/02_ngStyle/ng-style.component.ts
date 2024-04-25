@@ -11,7 +11,8 @@ export class NgStyleComponent {
     let styles = {
       color: 'red',
       fontWeight: 'bold',
-      fontSize: "18px"
+      fontSize: "18px",
+      'background-color': 'yellow'
     }
     return styles;
   }

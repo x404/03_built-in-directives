@@ -2,18 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NgClassComponent } from './01_ngClass/ng-class.component';
 import { RouterLink, RouterModule, RouterOutlet, Routes } from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import { NgClassComponent } from "./attributive-directives/01_ngClass/ng-class.component";
+import { NgStyleComponent } from "./attributive-directives/02_ngStyle/ng-style.component";
+import { NgIfComponent } from "./structural-directives/03_ngIf/ng-if.component";
 
 const appRoutes: Routes = [
   { path: 'ng-class', component: NgClassComponent},
+  { path: 'ng-style', component: NgStyleComponent},
+  { path: 'ng-if', component: NgIfComponent},
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgStyleComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
