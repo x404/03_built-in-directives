@@ -9,6 +9,7 @@ import { NgStyleComponent } from "./attributive-directives/02_ngStyle/ng-style.c
 import { NgIfComponent } from "./structural-directives/03_ngIf/ng-if.component";
 import { NgSwitchComponent } from "./structural-directives/04_ngSwitch/ng-switch.component";
 import { NgForComponent } from "./structural-directives/04_ngFor/ng-for.component";
+import { NgReferenceVariableComponent } from './ng-reference-variable/ng-reference-variable.component';
 
 const appRoutes: Routes = [
   { path: 'ng-class', component: NgClassComponent},
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'ng-if', component: NgIfComponent},
   { path: 'ng-switch', component: NgSwitchComponent},
   { path: 'ng-for', component: NgForComponent},
+  { path: 'ng-reference-variable', component: NgReferenceVariableComponent},
 ]
 
 @NgModule({
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     NgStyleComponent,
     NgIfComponent,
     NgSwitchComponent,
-    NgForComponent
+    NgForComponent,
+    NgReferenceVariableComponent
   ],
   imports: [
     BrowserModule,
