@@ -1,0 +1,17 @@
+<h1>ngFor</h1>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{item}}
+  </li>
+</ul>
+
+
+<ul>
+  <li
+    *ngFor="let item of items; let i = index; let e = even"
+    [style.background-color] ="e ? 'yellow' : ''"
+  >
+   {{i}} - {{item}}
+  </li>
+</ul>
