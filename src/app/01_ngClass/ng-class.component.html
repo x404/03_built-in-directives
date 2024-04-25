@@ -1,0 +1,29 @@
+<h1>ngClass</h1>
+
+<label><input type="checkbox" [(ngModel)]="settings.accent">Accent </label><br>
+<label><input type="checkbox" [(ngModel)]="settings.error">Error </label><br>
+<label><input type="checkbox" [(ngModel)]="settings.highlighted">Highlighted </label><br>
+
+<!--use ngClass directive-->
+<div [ngClass]="settings">Hello world #1</div>
+
+
+<!-- using class binding-->
+<hr>
+<div
+  [class.accent]="settings.accent"
+  [class.error]="settings.error"
+  [class.highlighted]="settings.highlighted"
+>Hello world #2</div>
+
+<!-- using array instead of object-->
+<hr>
+<div
+  [ngClass]="['accent', 'error']"
+>Hello world #3</div>
+<hr>
+<div>Hello world #4</div>
+
+
+<input [value]="value" (input)="onInput($event)">
+{{value}}
